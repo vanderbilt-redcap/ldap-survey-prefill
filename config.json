@@ -1,0 +1,73 @@
+{
+	"name": "VUNet ID Login with Survey Prefill",
+	"namespace": "Vanderbilt\\LDAPSurveyPrefill",
+	"description": "Requires LDAP authentication on surveys, and pre-fills as many fields as possible from LDAP.",
+	"framework-version": 2,
+	"authors": [
+		{
+			"name": "Mark McEver",
+			"email": "datacore@vumc.org",
+			"institution": "Vanderbilt University Medical Center"
+		}
+	],
+	"permissions": [
+		"hook_every_page_before_render",
+		"hook_survey_page"
+	],
+	"project-settings": [
+		{
+			"key": "warning",
+			"name": "<b>WARNING:</b> There are a couple dozen fields that will <b>ALWAYS</b> be automatically populated in addition to the fields below.  If you would like to change this behavior, please see the last question on <u><a href='https://redcap.vanderbilt.edu/surveys/?__dashboard=LKJRKWW7WKJ' target='_blank'>this page</a></u>.",
+			"type": "descriptive"
+		},
+        {
+			"key": "prefill_empty_only",
+			"name":"Keep existing field data?",
+			"required": false,
+			"type":"checkbox",
+			"repeatable": false
+      	},
+		{
+			"key": "vunet_fields",
+			"name":"Variable names for VUNET ID",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+		},
+	  	{
+			"key": "first_name_fields",
+			"name":"Variable names for First Name",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+	  	},
+		{
+			"key": "last_name_fields",
+			"name":"Variable names for Last Name",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+		},
+		{
+			"key": "email_fields",
+			"name":"Variable names for Email address",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+		},
+		{
+			"key": "phone_fields",
+			"name":"Variable names for Phone number",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+		},
+		{
+			"key": "employee_fields",
+			"name":"Variable names for Employee ID",
+			"required": false,
+			"type":"field-list",
+			"repeatable": true
+		}
+    ]
+}
