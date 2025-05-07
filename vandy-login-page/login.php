@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://sso.vanderbilt.edu/idp/SSO.saml2 -->
+
 <html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sign On</title>
-    <!--<base href="https://sso.vanderbilt.edu/">--><base href=".">
+    <base href=".">
 
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="<?=$this->getUrl('vandy-login-page/main-generic-v.css')?>">
