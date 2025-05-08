@@ -17,7 +17,7 @@
 	"project-settings": [
 		{
 			"key": "warning",
-			"name": "<b>WARNING:</b> There are a couple dozen fields that will <b>ALWAYS</b> be automatically populated in addition to the fields below.  If you would like to change this behavior, please see the last question on <u><a href='https://redcap.vanderbilt.edu/surveys/?__dashboard=LKJRKWW7WKJ' target='_blank'>this page</a></u>.",
+			"name": "<b>WARNING:</b> There are a couple dozen fields that will <b>ALWAYS</b> be automatically populated in addition to the fields below.  If you would like to change this behavior, please see the last question on <u><a href='https://redcap.vumc.org/surveys/?__dashboard=LKJRKWW7WKJ' target='_blank'>this page</a></u>.",
 			"type": "descriptive"
 		},
         {
